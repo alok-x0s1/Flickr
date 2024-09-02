@@ -1,15 +1,12 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Poppins, Baskervville } from "next/font/google";
 import "./globals.css";
 import AuthProvider from "@/context/AuthProvider";
 import { Toaster } from "@/components/ui/toaster";
 import { ThemeProvider } from "@/components/theme-provider";
 import Navbar from "@/components/Navbar";
-
-const poppins = Poppins({
-	subsets: ["latin"],
-	weight: ["400", "500", "600", "700"],
-});
+import Footer from "@/components/Footer";
+import { rubik } from "@/data/font";
 
 export const metadata: Metadata = {
 	title: "Whisper Box",
@@ -24,7 +21,7 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<AuthProvider>
-				<body className={poppins.className}>
+				<body className={rubik.className}>
 					<ThemeProvider
 						attribute="class"
 						defaultTheme="dark"
@@ -33,6 +30,7 @@ export default function RootLayout({
 					>
 						<Navbar />
 						{children}
+						<Footer />
 					</ThemeProvider>
 					<Toaster />
 				</body>
