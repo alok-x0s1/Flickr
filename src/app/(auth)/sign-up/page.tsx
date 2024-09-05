@@ -22,6 +22,8 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Loader2 } from "lucide-react";
 import Link from "next/link";
+import { cn } from "@/lib/utils";
+import { orbitron } from "@/data/font";
 
 const Page = () => {
 	const [username, setUsername] = useState("");
@@ -102,7 +104,12 @@ const Page = () => {
 		<div className="flex justify-center items-start p-12 min-h-[110vh]">
 			<div className="w-full max-w-md p-8 space-y-8 rounded-lg shadow-sm border shadow-gray-500">
 				<div className="text-center">
-					<h1 className="text-4xl font-extrabold tracking-tight mb-6">
+					<h1
+						className={cn(
+							"text-4xl font-extrabold tracking-tight mb-6",
+							orbitron.className
+						)}
+					>
 						Join Whisper Box
 					</h1>
 					<p className="mb-4">

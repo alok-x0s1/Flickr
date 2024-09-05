@@ -6,8 +6,6 @@ import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { useToast } from "@/components/ui/use-toast";
 import { redirect, useRouter } from "next/navigation";
-import axios, { AxiosError } from "axios";
-import { ApiResponse } from "@/types/ApiResponse";
 import {
 	Form,
 	FormControl,
@@ -22,6 +20,8 @@ import { Loader2 } from "lucide-react";
 import Link from "next/link";
 import { signinSchema } from "@/schemas/signinSchema";
 import { signIn } from "next-auth/react";
+import { cn } from "@/lib/utils";
+import { orbitron } from "@/data/font";
 
 const Page = () => {
 	const [isSubmitting, setIsSubmitting] = useState(false);
@@ -67,7 +67,12 @@ const Page = () => {
 		<div className="flex justify-center items-start p-12 min-h-screen">
 			<div className="w-full max-w-md p-8 space-y-8 rounded-lg shadow-sm border shadow-gray-500">
 				<div className="text-center">
-					<h1 className="text-4xl font-extrabold tracking-tight mb-6">
+					<h1
+						className={cn(
+							"text-4xl font-extrabold tracking-tight mb-6",
+							orbitron.className
+						)}
+					>
 						Join Whisper Box
 					</h1>
 					<p className="mb-4">
