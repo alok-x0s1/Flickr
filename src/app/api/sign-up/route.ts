@@ -65,7 +65,6 @@ export async function POST(request: Request) {
 				messages: [],
 			});
 			await newUser.save();
-			console.log(expiryDate, newUser);
 		}
 
 		const emailResponse = await sendVerificationEmail(

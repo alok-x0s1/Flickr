@@ -1,6 +1,6 @@
 import { ApiResponse } from "@/types/ApiResponse";
-import resend from "@/lib/resend";
-import VerificationEmail from "../../emails/VerificationEmail";
+import { verificationTemplate } from "../../emails/VerificationEmail";
+import nodemailer from "nodemailer";
 
 export async function sendVerificationEmail(
 	email: string,
@@ -8,12 +8,23 @@ export async function sendVerificationEmail(
 	verifyCode: string
 ): Promise<ApiResponse> {
 	try {
-		await resend.emails.send({
-			from: "whisperBox@business.com",
+		const transport = nodemailer.createTransport({
+			host: process.env.MAIL_HOST,
+			port: Number(process.env.MAIL_PORT),
+			auth: {
+				user: process.env.MAIL_USER,
+				pass: process.env.MAIL_PASS,
+			},
+		});
+
+		const mailOptions = {
+			from: process.env.USER_MAIL,
 			to: email,
 			subject: "Whisper Box - Verify Your Email",
-			react: VerificationEmail({ username, otp: verifyCode }),
-		});
+			html: verificationTemplate({ username, otp: verifyCode }),
+		};
+
+		const mailResponse = await transport.sendMail(mailOptions);
 		return {
 			success: true,
 			message: "Verification email sent successfully",
