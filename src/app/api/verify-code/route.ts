@@ -30,7 +30,7 @@ export async function POST(request: Request) {
 			return Response.json(
 				{
 					success: true,
-					message: "Your Whisper box account verified successfully.",
+					message: "Your Flickr account verified successfully.",
 				},
 				{
 					status: 200,

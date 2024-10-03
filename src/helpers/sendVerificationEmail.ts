@@ -20,7 +20,7 @@ export async function sendVerificationEmail(
 		const mailOptions = {
 			from: process.env.USER_MAIL,
 			to: email,
-			subject: "Whisper Box - Verify Your Email",
+			subject: "Flickr - Verify Your Email",
 			html: verificationTemplate({ username, otp: verifyCode }),
 		};
 
