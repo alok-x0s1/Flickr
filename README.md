@@ -1,6 +1,6 @@
-# Whisper Box
+# Flickr
 
-Whisper Box is an anonymous feedback application built with Next.js. This app allows users to manage anonymous feedback through a personalized dashboard. Users can share their profile link to receive messages or feedback anonymously, with the ability to accept or decline incoming messages.
+Flickr is an anonymous feedback application built with Next.js. This app allows users to manage anonymous feedback through a personalized dashboard. Users can share their profile link to receive messages or feedback anonymously, with the ability to accept or decline incoming messages.
 
 ## Features
 
@@ -21,18 +21,18 @@ Whisper Box is an anonymous feedback application built with Next.js. This app al
 
 ## Installation
 
-To get started with Whisper Box, follow these steps:
+To get started with Flickr, follow these steps:
 
 1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/alok-x0s1/Whisper-Box.git
+    git clone https://github.com/alok-x0s1/flickr.git
     ```
 
 2. **Navigate to the project directory:**
 
     ```bash
-    cd wWisper-Box
+    cd flickr
     ```
 
 3. **Install dependencies:**
@@ -68,6 +68,36 @@ To get started with Whisper Box, follow these steps:
 1. **Sign Up/Login:** Create an account or log in to access your dashboard.
 2. **Profile Link:** Share your unique profile link to start receiving anonymous feedback.
 3. **Manage Messages:** View, accept, or decline messages directly from your dashboard.
+
+# Overview
+
+It is a simple and secure platform for anonymous feedback. It is built with Next.js, MongoDB, and NextAuth.js. Using this platform, you can share your thoughts and receive anonymous feedback from others.
+
+## Home Page
+
+The home page is the first page that you see when you open the app. It has a simple and clean design. It has a hero section with `Join now` and `Sign up` button. And below that, it has a features section.
+
+![Home Page](public/home.png)
+
+## Profile
+
+In the profile page, you can see your profile details and your messages count. And you also have the option to edit your profile details.
+
+![Profile Page](public/profile.png)
+
+## Sign Up Page
+
+The sign up page is the page that you see when you click on the `Sign up` button in the home page. It has a simple and clean design. It has a form with `Username`, `Email` and `Password` fields. And below that, it has a `Sign up` button.
+
+![Sign Up Page](public/sign-up.png)
+
+## Dashboard
+
+The dashboard page is the page where you can see all the messages you have received. Also have the option to accept or decline the messages and delete them.
+
+![Dashboard Page](public/dashboard.png)
+
+
 
 ## Contributing
 
