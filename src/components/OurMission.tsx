@@ -13,7 +13,7 @@ export function OurMission() {
 			<div className="py-20 flex flex-col lg:flex-row items-center justify-center w-full gap-4 mx-auto px-8">
 				<Card
 					title="Our mission"
-					description="At Whisper Box, our mission is to create a platform where people can share their thoughts and receive anonymous feedback securely and effortlessly."
+					description="At Flickr, our mission is to create a platform where people can share their thoughts and receive anonymous feedback securely and effortlessly."
 					icon={<Logo />}
 				>
 					<CanvasRevealEffect

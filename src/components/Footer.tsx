@@ -8,10 +8,10 @@ function Footer() {
 				<div>
 					<div>
 						<h2 className="text-lg font-semibold mb-4">
-							About Whisper Box
+							About Flickr
 						</h2>
 						<p className="mb-4">
-							Whisper Box is a community-driven platform where
+							Flickr is a community-driven platform where
 							thoughts meet ideas, and conversations spark
 							creativity. We empower users to share their stories,
 							connect with others, and explore new perspectives in
@@ -90,13 +90,13 @@ function Footer() {
 						</h2>
 						<p>New York, USA</p>
 						<p>NY 10001</p>
-						<p>Email: support@whisperboxnx.com</p>
+						<p>Email: support@flickr.com</p>
 						<p>Phone: (987) 654-3210</p>
 					</div>
 				</div>
 			</div>
 			<p className="text-center text-sm pt-6 text-gray-500">
-				© 2024 Whisper Box. All rights reserved.
+				© 2024 Flickr. All rights reserved.
 			</p>
 		</footer>
 	);

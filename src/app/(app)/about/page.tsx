@@ -9,14 +9,14 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 import React from "react";
 
-const page = () => {
+const About = () => {
 	return (
 		<div className="w-full min-h-screen flex flex-col items-center pt-12">
 			<div>
 				<h1 className="text-4xl mt-16 md:text-4xl lg:text-6xl font-semibold max-w-7xl mx-auto text-center relative z-20 py-6 bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-neutral-700 to-neutral-700 dark:from-neutral-800 dark:via-white dark:to-white">
 					Learn something more <br /> about{" "}
 					<Cover className={cn(orbitron.className)}>
-						Whisper Box
+						Flicker_rrr...
 					</Cover>
 				</h1>
 			</div>
@@ -75,6 +75,6 @@ const page = () => {
 	);
 };
 
-export default page;
+export default About;
 
-export const words = `In the digital wilderness, where every click is a leap of faith, we're the guiding star. Whisper Box isn’t just another website; it's a sanctuary of clarity amidst the noise. When the world shouts, we whisper. Calm, collected, unshakeable. Here, every word counts, every interaction is a promise, and every outcome is crafted with care. Embrace the stillness, where technology meets tranquility.`;
+const words = `In the digital wilderness, where every click is a leap of faith, we're the guiding star. Flicker isn’t just another website; it's a sanctuary of clarity amidst the noise. When the world shouts, we whisper. Calm, collected, unshakeable. Here, every word counts, every interaction is a promise, and every outcome is crafted with care. Embrace the stillness, where technology meets tranquility.`;

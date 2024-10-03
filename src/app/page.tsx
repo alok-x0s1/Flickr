@@ -7,7 +7,7 @@ import { orbitron } from "@/data/font";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 
-export default function Home() {
+const Home = () => {
 	return (
 		<main className="flex min-h-screen justify-start items-center flex-col">
 			<div className="flex flex-col items-center justify-center h-fit max-w-5xl space-x-8 py-16">
@@ -17,7 +17,7 @@ export default function Home() {
 						orbitron.className
 					)}
 				>
-					Whisper Box
+					Flickr_rrr...
 				</h1>
 
 				<TypewriterEffectSmooth words={words} />
@@ -67,15 +67,16 @@ export default function Home() {
 						orbitron.className
 					)}
 				>
-					Faq's
+					Faq&apos;s
 				</h2>
 				<Faq />
 			</div>
 		</main>
 	);
-}
+};
 
-export const words = [
+export default Home;
+const words = [
 	{
 		text: "Anonymous",
 	},
@@ -92,7 +93,7 @@ export const words = [
 		text: "With",
 	},
 	{
-		text: "Whisper Box.",
+		text: "Flickr.",
 		className: "text-blue-500 dark:text-blue-500",
 	},
 ];

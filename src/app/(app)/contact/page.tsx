@@ -4,7 +4,7 @@ import { orbitron } from "@/data/font";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 
-const Page = () => {
+const Contact = () => {
 	return (
 		<div className="min-h-screen w-full rounded-md relative flex flex-col items-center justify-center antialiased">
 			<div className="py-8 mt-16 lg:py-16 px-4 mx-auto max-w-screen-md z-10">
@@ -78,4 +78,4 @@ const Page = () => {
 	);
 };
 
-export default Page;
+export default Contact;

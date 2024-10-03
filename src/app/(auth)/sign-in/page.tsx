@@ -23,7 +23,7 @@ import { signIn } from "next-auth/react";
 import { cn } from "@/lib/utils";
 import { orbitron } from "@/data/font";
 
-const Page = () => {
+const SignIn = () => {
 	const [isSubmitting, setIsSubmitting] = useState(false);
 
 	const { toast } = useToast();
@@ -73,7 +73,7 @@ const Page = () => {
 							orbitron.className
 						)}
 					>
-						Join Whisper Box
+						Join Flickr
 					</h1>
 					<p className="mb-4">
 						Sign in to your account to connect with like-minded
@@ -150,4 +150,4 @@ const Page = () => {
 	);
 };
 
-export default Page;
+export default SignIn;

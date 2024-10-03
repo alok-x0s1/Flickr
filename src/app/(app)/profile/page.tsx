@@ -29,7 +29,7 @@ interface UserData {
 	messagesCount: number;
 }
 
-const page = () => {
+const Profile = () => {
 	const [userData, setUserData] = useState<UserData>({
 		username: "",
 		email: "",
@@ -94,7 +94,7 @@ const page = () => {
 									<Avatar>
 										<AvatarImage
 											src="/avatar.png"
-											alt="@whisperBox"
+											alt="@flickr"
 										/>
 										<AvatarFallback>WB</AvatarFallback>
 									</Avatar>
@@ -188,4 +188,4 @@ const page = () => {
 	);
 };
 
-export default page;
+export default Profile;

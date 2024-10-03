@@ -25,7 +25,7 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { orbitron } from "@/data/font";
 
-const Page = () => {
+const SignUp = () => {
 	const [username, setUsername] = useState("");
 	const [usernameMessage, setUsernameMessage] = useState("");
 	const [isLoading, setIsLoading] = useState(false);
@@ -110,7 +110,7 @@ const Page = () => {
 							orbitron.className
 						)}
 					>
-						Join Whisper Box
+						Join Flickr
 					</h1>
 					<p className="mb-4">
 						Create a new account for free and connect with
@@ -222,4 +222,4 @@ const Page = () => {
 	);
 };
 
-export default Page;
+export default SignUp;

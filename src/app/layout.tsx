@@ -9,7 +9,7 @@ import Footer from "@/components/Footer";
 import { rubik } from "@/data/font";
 
 export const metadata: Metadata = {
-	title: "Whisper Box",
+	title: "Flickr",
 	description: "An anonymous feedback application for the people.",
 };
 

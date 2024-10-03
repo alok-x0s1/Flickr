@@ -24,7 +24,7 @@ import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 
-const Page = () => {
+const Whisper = () => {
 	const params = useParams<{ username: string }>();
 	const [isLoading, setIsLoading] = useState(false);
 	const { toast } = useToast();
@@ -189,4 +189,4 @@ const Page = () => {
 	);
 };
 
-export default Page;
+export default Whisper;
